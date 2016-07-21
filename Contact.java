@@ -5,6 +5,7 @@ public class Contact implements Serializable{
 	private String name;
 	private String phone;
 	private boolean active;
+	private String email;
 
 	public Contact(int i,String n,String p,boolean a){
 		
@@ -24,6 +25,10 @@ public class Contact implements Serializable{
 
 	}
 
+	public void setEmail(String em){
+		thid.email = em;
+	}
+
 	public void setId(int i){
 		this.id = i;
 	}
@@ -38,6 +43,10 @@ public class Contact implements Serializable{
 
 	public void setActive(boolean a){
 		this.active = a;
+	}
+
+	public String getEmail(){
+		return this.email;
 	}
 
 	public int getId(){
