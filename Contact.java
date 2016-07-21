@@ -5,7 +5,7 @@ public class Contact implements Serializable{
 	private String name;
 	private String phone;
 	private boolean active;
-	private String email;
+	private String surname;
 
 	public Contact(int i,String n,String p,boolean a){
 		
@@ -25,8 +25,8 @@ public class Contact implements Serializable{
 
 	}
 
-	public void setEmail(String em){
-		thid.email = em;
+	public void setSurname(String s){
+		this.surname = s;
 	}
 
 	public void setId(int i){
@@ -45,8 +45,8 @@ public class Contact implements Serializable{
 		this.active = a;
 	}
 
-	public String getEmail(){
-		return this.email;
+	public String getSurname(){
+		return this.surname;
 	}
 
 	public int getId(){
