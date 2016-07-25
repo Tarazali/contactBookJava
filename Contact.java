@@ -6,14 +6,16 @@ public class Contact implements Serializable{
 	private String phone;
 	private boolean active;
 	private String surname;
+	private String address;
 
-	public Contact(int i,String n,String p,boolean a){
+	public Contact(int i,String n,String p,boolean a, String s, String ad){
 		
 		this.id = i;
 		this.name = n;
 		this.phone = p;
 		this.active = a;
-
+		this.surname = s;
+		this.address = ad;
 	}
 
 	public Contact(){
@@ -22,7 +24,12 @@ public class Contact implements Serializable{
 		this.name = "--------";
 		this.phone = "--------";
 		this.active = true;
+		this.surname = "--------";
+		this.address = "--------";
+	}
 
+	public void setAddress(String ad){
+		this.address = ad;
 	}
 
 	public void setSurname(String s){
@@ -43,6 +50,10 @@ public class Contact implements Serializable{
 
 	public void setActive(boolean a){
 		this.active = a;
+	}
+
+	public String getAddress(){
+		return this.address;
 	}
 
 	public String getSurname(){
